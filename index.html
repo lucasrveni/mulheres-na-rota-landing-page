@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF--8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mulheres na Rota</title>
+    <link rel="stylesheet" href="style/index.css">
+</head>
+<body>
+    <div class="container">
+        <img src="assets/icon/mulheres-rota.webp" alt="Ícone do app Mulheres na Rotas" class="app-icon">
+        <h1>Mulheres na Rota</h1>
+        <p>O app de mobilidade feito por e para mulheres. Baixe agora:</p>
+        <div class="store-buttons">
+            <a class="store-btn" href="https://apps.apple.com/br/app/mulheres-na-rota/id6633411788" target="_blank" rel="noopener">
+                <img src="assets/icon/icons8-apple-app-store.svg" alt="App Store" style="width:32px;height:32px;margin-right:0.8rem;">
+                Baixar para iPhone
+            </a>
+            <a class="store-btn" href="https://play.google.com/store/apps/details?id=br.com.mulheresnarota.passenger.drivermachine&hl=pt_BR&pli=1" target="_blank" rel="noopener">
+                <img src="assets/icon/icons8-google-play.svg" alt="Play Store" style="width:32px;height:32px;margin-right:0.8rem;">
+                Baixar para Android
+            </a>
+        </div>
+        <br>
+        <div class="app-gallery">
+            <img src="assets/screenshots/1.webp" alt="Screenshot 1 do app Mulheres na Rotas" onclick="openModal(0)">
+            <img src="assets/screenshots/2.webp" alt="Screenshot 2 do app Mulheres na Rotas" onclick="openModal(1)">
+            <img src="assets/screenshots/3.webp" alt="Screenshot 3 do app Mulheres na Rotas" onclick="openModal(2)">
+            <img src="assets/screenshots/4.webp" alt="Screenshot 4 do app Mulheres na Rotas" onclick="openModal(3)">
+            <img src="assets/screenshots/5.webp" alt="Screenshot 5 do app Mulheres na Rotas" onclick="openModal(4)">
+        </div>
+    </div>
+
+    <div id="myModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImg">
+        <a class="prev" onclick="changeImage(-1)">&#10094;</a>
+        <a class="next" onclick="changeImage(1)">&#10095;</a>
+    </div>
+
+    <script src="js/index.js"></script>
+</body>
+</html>
